@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Livia Gunawan | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-error-container": "#ffdad6", "surface-dim": "#0b1326", "on-background": "#dae2fd", "on-primary": "#3c0091", "inverse-surface": "#dae2fd", "primary-fixed-dim": "#d0bcff", "tertiary-fixed": "#ffdcbb", "surface-container-lowest": "#060e20", "outline-variant": "#494454", "on-tertiary": "#482900", "tertiary-fixed-dim": "#ffb869", "surface-bright": "#31394d", "on-secondary-container": "#00374d", "secondary-fixed": "#c4e7ff", "on-surface-variant": "#cbc3d7", "on-primary-fixed-variant": "#5516be", "surface-variant": "#2d3449", "on-tertiary-fixed": "#2c1700", "surface-container-low": "#131b2e", "on-primary-container": "#340080", "surface-tint": "#d0bcff", outline: "#958ea0", "surface-container": "#171f33", secondary: "#7bd0ff", "tertiary-container": "#ca801e", "on-error": "#690005", surface: "#0b1326", error: "#ffb4ab", "secondary-fixed-dim": "#7bd0ff", "surface-container-high": "#222a3d", "primary-container": "#a078ff", "on-secondary-fixed-variant": "#004c69", "inverse-on-surface": "#283044", "on-surface": "#dae2fd", "on-secondary": "#00354a", "secondary-container": "#00a6e0", "on-tertiary-container": "#3f2300", tertiary: "#ffb869", "on-primary-fixed": "#23005c", "surface-container-highest": "#2d3449", "on-tertiary-fixed-variant": "#673d00", background: "#0b1326", "error-container": "#93000a", primary: "#d0bcff", "primary-fixed": "#e9ddff", "on-secondary-fixed": "#001e2c", "inverse-primary": "#6d3bd7"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {gutter: "24px", lg: "48px", xl: "80px", xs: "8px", sm: "16px", base: "4px", md: "24px", "container-max": "1200px"}, fontFamily: {"label-sm": ["Inter"], display: ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], headline: ["Plus Jakarta Sans"], body: ["Inter"], label: ["Inter"]}, fontSize: {"label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600"}], display: ["64px", {lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "700"}], "display-mobile": ["40px", {lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700"}], "body-md": ["16px", {lineHeight: "24px", fontWeight: "400"}], "headline-lg": ["32px", {lineHeight: "40px", fontWeight: "600"}], "body-lg": ["18px", {lineHeight: "28px", fontWeight: "400"}], "headline-lg-mobile": ["24px", {lineHeight: "32px", fontWeight: "600"}], "headline-md": ["24px", {lineHeight: "32px", fontWeight: "600"}], "label-md": ["14px", {lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500"}]}}}};</script>
+<style>
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .accent-glow {
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+        }
+        .accent-glow-hover:hover {
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+        }
+        .timeline-line {
+            background: linear-gradient(to bottom, #d0bcff, #7bd0ff);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md dark:bg-surface/80 shadow-sm border-b border-white/10 h-20">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-md h-full">
+<div class="font-display text-headline-md font-bold text-on-surface dark:text-on-surface">
+                Livia Gunawan
+            </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="font-display text-body-md text-primary font-bold border-b-2 border-primary pb-1 cursor-pointer active:scale-95 transition-all" href="#intro">Intro</a>
+<a class="font-display text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer active:scale-95" href="#about">About</a>
+<a class="font-display text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer active:scale-95" href="#education">Education</a>
+<a class="font-display text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer active:scale-95" href="#showcase">Showcase</a>
+<a class="font-display text-body-md text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer active:scale-95" href="#contact">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-md py-xs rounded-full font-label-md hover:bg-primary-container transition-all accent-glow active:scale-95" href="#">
+                Resume
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="intro">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+</div>
+<div class="max-w-container-max mx-auto px-md w-full grid grid-cols-1 md:grid-cols-2 gap-xl items-center relative z-10">
+<div class="order-2 md:order-1 space-y-md">
+<div class="inline-block px-sm py-1 rounded-full bg-primary/10 border border-primary/20 text-primary font-label-sm">
+                    Web Development Apprentice
+                </div>
+<h1 class="font-display text-display-mobile md:text-display text-on-surface leading-tight">
+                    Halo, Saya <span class="text-primary">Livia Gunawan</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Siswi SMA Stella Duce 1 | Aspiring Web Developer &amp; Tech Enthusiast yang berfokus pada pembuatan antarmuka digital yang bersih dan fungsional.
+                </p>
+<div class="flex flex-wrap gap-sm pt-base">
+<a class="bg-primary text-on-primary px-lg py-md rounded-xl font-label-md transition-all accent-glow accent-glow-hover flex items-center gap-xs" href="#showcase">
+                        Lihat Karya Saya
+                        <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="border border-secondary text-secondary px-lg py-md rounded-xl font-label-md transition-all hover:bg-secondary/5" href="#about">
+                        Tentang Saya
+                    </a>
+</div>
+</div>
+<div class="order-1 md:order-2 flex justify-center">
+<div class="relative w-64 h-64 md:w-80 md:h-80">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-20 animate-pulse"></div>
+<div class="relative w-full h-full rounded-full border-2 border-white/10 p-2 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover rounded-full" data-alt="A professional studio portrait of a young female high school student with a friendly and intelligent expression, set against a dark navy blue background with subtle purple accent lighting. She is wearing a modern, minimalist outfit, and the overall aesthetic is polished, sophisticated, and academic, fitting a dark-themed professional portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvZTx1qU1AkjB10ZPKD-jXfyL7JlDfS-aYonUzDaUGoTO6ptk5ePkIW7I6_CS3Raz3nGELgKU07nLgOOSCJOVUZDUoAwf6YQo84E2bsXz_r2vxBiK-6-TE1LvOGpc0EX_bPWB6MmPzV95JkEcsqVKERCWR6sVO6EqYzxXqp58E9p_iNZlmimvOYOKqB4tOMweO5uwpM8pdUVCMxZvY9yGiz5nFpVjVAwoE5ZiyTRZlXjRFTrqJBiftXQMRuMQCOHeRRTgWn4nky-U"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Me -->
+<section class="py-xl bg-surface-container-low" id="about">
+<div class="max-w-container-max mx-auto px-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5 relative">
+<div class="glass-card rounded-2xl overflow-hidden aspect-square flex items-center justify-center p-md">
+<div class="text-center">
+<span class="material-symbols-outlined text-[80px] text-primary/40 mb-sm">code</span>
+<div class="font-display text-headline-md text-on-surface">Curiosity Driven</div>
+<p class="text-on-surface-variant">Livia's approach to coding is built on meticulous organization and intellectual curiosity.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 space-y-md">
+<h2 class="font-display text-headline-lg-mobile md:text-headline-lg text-on-surface">About Me</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Saya adalah seorang pelajar yang memiliki ketertarikan mendalam pada dunia teknologi, khususnya dalam pengembangan web. Memulai perjalanan dengan HTML dan CSS, saya senang mengeksplorasi bagaimana struktur kode dapat berubah menjadi pengalaman visual yang menarik.
+                    </p>
+<p class="text-on-surface-variant">
+                        Di SMA Stella Duce 1, saya mengasah kemampuan berpikir kritis dan kolaborasi, yang saya terapkan dalam setiap proyek coding kecil yang saya kerjakan.
+                    </p>
+<div class="flex flex-wrap gap-sm pt-sm">
+<span class="px-md py-xs rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-sm">HTML5</span>
+<span class="px-md py-xs rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-sm">CSS3</span>
+<span class="px-md py-xs rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-sm">Responsive Design</span>
+<span class="px-md py-xs rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-sm">Tailwind CSS</span>
+<span class="px-md py-xs rounded-full bg-secondary/10 border border-secondary/20 text-secondary font-label-sm">UI/UX Principles</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Journey -->
+<section class="py-xl" id="education">
+<div class="max-w-container-max mx-auto px-md">
+<div class="text-center max-w-2xl mx-auto mb-xl">
+<h2 class="font-display text-headline-lg text-on-surface mb-sm">Education Journey</h2>
+<div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Timeline Vertical Line -->
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-px timeline-line opacity-30"></div>
+<!-- Event 1 -->
+<div class="relative mb-xl">
+<div class="flex flex-col md:flex-row items-center gap-md">
+<div class="md:w-1/2 text-right hidden md:block">
+<h3 class="font-display text-headline-md text-on-surface">SD PIUS BU Kebumen</h3>
+<p class="text-primary font-label-md">Elementary Education</p>
+</div>
+<div class="z-10 w-10 h-10 rounded-full bg-surface-container border-2 border-primary flex items-center justify-center accent-glow">
+<span class="material-symbols-outlined text-[20px] text-primary">school</span>
+</div>
+<div class="md:w-1/2 text-left bg-surface-container-high p-md rounded-xl glass-card">
+<div class="md:hidden">
+<h3 class="font-display text-headline-md text-on-surface">SD PIUS BU Kebumen</h3>
+<p class="text-primary font-label-md">Elementary Education</p>
+</div>
+<p class="text-on-surface-variant mt-xs">Masa awal eksplorasi akademik dan pengembangan karakter di Kebumen.</p>
+</div>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="relative mb-xl">
+<div class="flex flex-col md:flex-row items-center gap-md">
+<div class="md:w-1/2 order-2 md:order-1 text-right bg-surface-container-high p-md rounded-xl glass-card">
+<div class="md:hidden">
+<h3 class="font-display text-headline-md text-on-surface">SMP PIUS BU Kebumen</h3>
+<p class="text-secondary font-label-md">Junior High School</p>
+</div>
+<p class="text-on-surface-variant mt-xs">Mulai aktif dalam berbagai kegiatan sekolah dan mulai mengenal dasar-dasar logika komputer.</p>
+</div>
+<div class="z-10 w-10 h-10 rounded-full bg-surface-container border-2 border-secondary flex items-center justify-center accent-glow">
+<span class="material-symbols-outlined text-[20px] text-secondary">history_edu</span>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 text-left hidden md:block">
+<h3 class="font-display text-headline-md text-on-surface">SMP PIUS BU Kebumen</h3>
+<p class="text-secondary font-label-md">Junior High School</p>
+</div>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="relative">
+<div class="flex flex-col md:flex-row items-center gap-md">
+<div class="md:w-1/2 text-right hidden md:block">
+<h3 class="font-display text-headline-md text-on-surface">SMA Stella Duce 1</h3>
+<p class="text-tertiary font-label-md">Senior High School (Current)</p>
+</div>
+<div class="z-10 w-10 h-10 rounded-full bg-surface-container border-2 border-tertiary flex items-center justify-center accent-glow">
+<span class="material-symbols-outlined text-[20px] text-tertiary">workspace_premium</span>
+</div>
+<div class="md:w-1/2 text-left bg-surface-container-high p-md rounded-xl border border-tertiary/20 glass-card">
+<div class="md:hidden">
+<h3 class="font-display text-headline-md text-on-surface">SMA Stella Duce 1</h3>
+<p class="text-tertiary font-label-md">Senior High School (Current)</p>
+</div>
+<p class="text-on-surface-variant mt-xs">Fokus pada pengembangan diri, kepemimpinan, dan mendalami pemrograman web secara mandiri.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Learning Showcase -->
+<section class="py-xl bg-surface-container-lowest overflow-hidden" id="showcase">
+<div class="max-w-container-max mx-auto px-md">
+<div class="flex justify-between items-end mb-xl">
+<div>
+<h2 class="font-display text-headline-lg text-on-surface">Learning Showcase</h2>
+<p class="text-on-surface-variant max-w-md mt-xs">Eksplorasi proyek coding dan desain yang saya kerjakan selama proses belajar.</p>
+</div>
+<div class="hidden md:flex gap-sm">
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-on-surface hover:bg-primary/20 hover:border-primary transition-all" id="prevBtn">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-on-surface hover:bg-primary/20 hover:border-primary transition-all" id="nextBtn">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-md overflow-x-auto pb-md hide-scrollbar snap-x snap-mandatory" id="carousel">
+<!-- Project 1 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-start">
+<div class="glass-card rounded-2xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300 group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, minimalist landing page design for a personal portfolio, featuring a dark theme with vibrant purple gradients and elegant typography. The layout is spacious with distinct sections for projects and contact information, showcasing modern UI design principles with glassmorphism effects and sharp high-definition rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkI_P4iZViFtF6i1pl2o_wvrbJ5NYKkF9JcJx0wvUxwSJrTDndPgWfPSg8RrU_xZrOI8Dlae8V4XxbRU1QiTt2O3Q-aW1t5t6eRiDJ1bgvcX7l_SIJYsCHggjGZ8LR2cK93eNm2CiWy1yrezwPZGJyg0O35jg_Bfz2p58zD9-qdsQuvxNqA1375unupe5E00W88pVPY3m4eNQUnKoLskAfIj1g-YzVVHIp1KsUv9o8bjttLkONVuBoyWcYl7ycGMxhsJIknbj1AJw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-60"></div>
+</div>
+<div class="p-md space-y-sm">
+<h3 class="font-display text-headline-md text-on-surface">Landing Page Latihan</h3>
+<p class="text-on-surface-variant text-label-md">Teknik: CSS Grid, Flexbox, &amp; Media Queries untuk responsivitas maksimal.</p>
+<div class="flex gap-sm pt-base">
+<a class="bg-primary text-on-primary px-md py-xs rounded-lg font-label-sm hover:bg-primary-container transition-all" href="#">Live Demo</a>
+<a class="border border-white/10 text-on-surface px-md py-xs rounded-lg font-label-sm hover:bg-white/5 transition-all" href="#">Lihat Code</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-start">
+<div class="glass-card rounded-2xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300 group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated interactive components dashboard layout with subtle animations, using a professional dark color palette of navy, muted blues, and soft purples. The visual includes stylized UI elements like charts, buttons, and form fields, all rendered with a high-end, futuristic tech-aesthetic that highlights attention to detail and digital craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEeEE6NYoQCbXutcul5kBFOhJFiHmkHtczv7yjSIb0ZdvfHGcjWk7ckVyhSOhDBkDsjHcoFdS7VjaFi12qBRFYyuUBRYopUUBK3016WoBEU3N3zG0d3-Ja-W35Zu7qlm-hSdqc9t3MrMMBT1fsfMC1jD8XWsogse0BiJZwivfUhtS957pi8BlxpOi7QyppFQ0mWckH4N0IbVtUI1086_bw32K_UoWqVrymaHwAnnCl0S6nh8kxAul-cGzgH4zzS6G-TjE79RKOfyg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-60"></div>
+</div>
+<div class="p-md space-y-sm">
+<h3 class="font-display text-headline-md text-on-surface">Interactive UI Components</h3>
+<p class="text-on-surface-variant text-label-md">Teknik: CSS Transitions, Pseudo-classes, &amp; Custom CSS Variables.</p>
+<div class="flex gap-sm pt-base">
+<a class="bg-primary text-on-primary px-md py-xs rounded-lg font-label-sm hover:bg-primary-container transition-all" href="#">Live Demo</a>
+<a class="border border-white/10 text-on-surface px-md py-xs rounded-lg font-label-sm hover:bg-white/5 transition-all" href="#">Lihat Code</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="min-w-[300px] md:min-w-[400px] snap-start">
+<div class="glass-card rounded-2xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300 group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A creative typography-focused website hero section for a conceptual student blog, utilizing bold 'Plus Jakarta Sans' fonts and elegant spacing. The theme is academic yet modern, featuring a dark navy background with luminescent blue text highlights, reflecting a high level of polish and intellectual curiosity in digital layout design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBitkiNc0iH1DJ033rdRE6ueBoIoDWU6BrwJdAvNTU-jgybYXxTGxmh7NDVEQRFaLq4--TRQ7eW6VVIiJWyd1M3aAGVOKG5m8mz668lshbmxgR_T4jzmkzr7xX8OkpMFzw1qh3QCYDz5stBi_wjGzf4g1eT28h6RFpfui7LS2kQ0QAzdor3N6cT_sa_UlFWCCGMg0JuwpJmv4wnFXQqaOr1cPEJNXEMdgQZdBSIx74x9W0F3Z8oPrIXMKZvox4XEZjo-ORVbf68wAY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-60"></div>
+</div>
+<div class="p-md space-y-sm">
+<h3 class="font-display text-headline-md text-on-surface">Typography Playground</h3>
+<p class="text-on-surface-variant text-label-md">Teknik: Web Fonts integration, Text gradients, &amp; Vertical Rhythm.</p>
+<div class="flex gap-sm pt-base">
+<a class="bg-primary text-on-primary px-md py-xs rounded-lg font-label-sm hover:bg-primary-container transition-all" href="#">Live Demo</a>
+<a class="border border-white/10 text-on-surface px-md py-xs rounded-lg font-label-sm hover:bg-white/5 transition-all" href="#">Lihat Code</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl" id="contact">
+<div class="max-w-container-max mx-auto px-md">
+<div class="glass-card rounded-3xl p-lg md:p-xl flex flex-col md:flex-row gap-xl items-center accent-glow">
+<div class="md:w-1/2 space-y-md">
+<h2 class="font-display text-headline-lg text-on-surface">Mari Berdiskusi</h2>
+<p class="text-on-surface-variant text-body-lg">
+                        Saya selalu terbuka untuk kolaborasi, diskusi teknologi, atau sekadar berbagi pengalaman belajar.
+                    </p>
+<div class="flex gap-md pt-sm">
+<a class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all active:scale-95" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/2 w-full">
+<form class="space-y-sm">
+<div class="grid grid-cols-2 gap-sm">
+<input class="bg-surface-dim border border-white/10 rounded-xl px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all w-full" placeholder="Nama" type="text"/>
+<input class="bg-surface-dim border border-white/10 rounded-xl px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all w-full" placeholder="Email" type="email"/>
+</div>
+<textarea class="bg-surface-dim border border-white/10 rounded-xl px-md py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all w-full" placeholder="Pesan Anda" rows="4"></textarea>
+<button class="w-full bg-primary text-on-primary py-md rounded-xl font-label-md accent-glow hover:bg-primary-container transition-all active:scale-95">
+                            Kirim Pesan
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-xl bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-md gap-sm">
+<div class="font-display text-headline-sm font-semibold text-on-surface">
+                Livia Gunawan
+            </div>
+<div class="text-on-surface-variant font-body-md text-label-md">
+                © 2024 Livia Gunawan. All rights reserved.
+            </div>
+<div class="flex gap-lg">
+<a class="text-secondary font-medium hover:text-tertiary transition-colors transition-all duration-200" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors transition-all duration-200" href="#">GitHub</a>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors transition-all duration-200" href="#">Email</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Carousel Functionality
+        const carousel = document.getElementById('carousel');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+
+        if (nextBtn && prevBtn && carousel) {
+            nextBtn.addEventListener('click', () => {
+                carousel.scrollBy({ left: 320, behavior: 'smooth' });
+            });
+            prevBtn.addEventListener('click', () => {
+                carousel.scrollBy({ left: -320, behavior: 'smooth' });
+            });
+        }
+
+        // Active Link Tracking
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.remove('text-on-surface-variant');
+                    link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                }
+            });
+        });
+    </script>
+</body></html>
